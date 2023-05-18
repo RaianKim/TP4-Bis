@@ -12,7 +12,11 @@ public Pais()
 }
 public Pais(string nom, string img, int pob, DateTime fecha, string AtracTuristicos)
 {
-
+    Nombre = nom;
+    imgBandera = img;
+    Poblacion = pob;
+    FechaIndependencia = fecha;
+    AtractivosTuristicos = AtracTuristicos;
 }
 }
 

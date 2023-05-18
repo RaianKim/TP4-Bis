@@ -17,7 +17,7 @@ public class HomeController : Controller
     {
         
         ViewBag.ListarPaises = Info.ListarPaises(); 
-        return View("index.cshtml");
+        return View();
     }
 
     public IActionResult DetallePais(string pais)
