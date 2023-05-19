@@ -14,6 +14,10 @@ private static void IniciarLista()
 }
 public static List<Pais> ListarPaises()
 {
+    if(ListaPaises.Count == 0)
+        {
+            IniciarLista();
+        }
     return ListaPaises;
 }
 public static Pais DetallePais(string nombre)

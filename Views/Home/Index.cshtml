@@ -6,9 +6,9 @@
     <h1 class="display-4">Bienvenido</h1>
 </div>
 
-@foreach (Pais pais in ViewBag.ListaPaises)
+@foreach(Pais paises in ViewBag.ListarPaises)
 {
-    <a href='@Url.Action("detallePais")'><img src="/Imagenes/@pais.imgBandera" alt="@pais"></a>
+    <a href='@Url.Action("DetallePais", new {pais = paises.Nombre})'> <img src="/Imagenes/@paises.imgBandera"></a>
 }
 
 

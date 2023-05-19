@@ -17,11 +17,12 @@ public class HomeController : Controller
     {
         
         ViewBag.ListarPaises = Info.ListarPaises(); 
-        return View();
+        return View("Index");
     }
 
     public IActionResult DetallePais(string pais)
     {
+        
         return View();
     }
 
