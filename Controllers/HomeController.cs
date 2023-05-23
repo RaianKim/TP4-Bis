@@ -22,8 +22,8 @@ public class HomeController : Controller
 
     public IActionResult DetallePais(string pais)
     {
-        
-        return View();
+        ViewBag.paisBuscar = Info.DetallePais(pais);
+        return View("detallePais");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
